@@ -12,6 +12,7 @@ class Users extends Component { //user is child className of Componenet
   }
 
   componentDidMount() {
+    console.log('changed');
     list().then(data => {
       if(data.error) {
         console.log(data.error);
